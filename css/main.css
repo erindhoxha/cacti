@@ -22,11 +22,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh; }
+  height: 100vh;
+  background-image: url("../img/HeroImage/hero.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .hero-title {
-  font-size: 7rem;
+  font-size: 10rem;
   color: #f2ba99; }
+
+.cta-button {
+  background-color: transparent;
+  color: #f2ba99;
+  border: 2px solid #f2ba99;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 12px 40px;
+  border-radius: 20px;
+  transition: 0.3s ease; }
+
+.cta-button:hover {
+  background-color: #f2ba99;
+  color: white; }
+
+.hero-wrapper {
+  position: absolute;
+  top: 15%; }
 
 /*
  * Remove text-shadow in selection highlight:
