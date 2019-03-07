@@ -6,8 +6,9 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
- 
+ @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
+ $main-color:#f2ba99;
+ $secondary-color:#f8c7aa;
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -16,8 +17,22 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Merriweather', serif;
 }
-
+body {
+    font-family: 'Merriweather', serif;
+}
+// HERO TITLES
+.container-hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+}
+.hero-title {
+    font-size:7rem;
+    color:$main-color;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
