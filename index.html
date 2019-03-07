@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
-
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+
 </head>
 
 <body>
@@ -22,6 +24,21 @@
     <div class="hero-wrapper">
         <h1 class="hero-title">Cacti</h1>
         <button class="cta-button">Shop now</button>
+    </div>
+  </div>
+
+  <div class="pot">
+    <div class="cactus-slider">
+      <div><img src="img/Cactus/product-1.png" /></div>
+      <div><img src="img/Cactus/product-1.png" /></div>
+      <div><img src="img/Cactus/product-1.png" /></div>
+      <div><img src="img/Cactus/product-1.png" /></div>
+
+      <div><img src="img/Cactus/product-1.png" /></div>
+
+      <div><img src="img/Cactus/product-1.png" /></div>
+      <div><img src="img/Cactus/product-1.png" /></div>
+
     </div>
   </div>
   <!--[if lte IE 9]>
@@ -37,13 +54,28 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="slick/slick.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.cactus-slider').slick({
+        'setting-name': 'setting-value',
+        infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+      });
+    });
+  </script>
+
 </body>
 
 </html>
